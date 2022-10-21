@@ -1,0 +1,21 @@
+#include<stdio.h>
+int add(int);
+int main(){
+int num,s;
+printf("enter number: ");
+scanf("%d",&num);
+s=add(num);
+printf("%d",s);
+return 0;
+}
+
+int add(int num){
+int a,b,c,sum=0;
+while(num>0){
+a=num%10;
+sum=sum+a;
+num=num/10;
+}
+return sum;
+
+}
